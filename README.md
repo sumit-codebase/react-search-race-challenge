@@ -20,16 +20,3 @@ first glance, but has a real bug.
 4. Be ready to explain: which request "wins" right now, and why is it
    the wrong one?
 
-## Hint (only if stuck)
-
-Look at `fakeApi.js` — it simulates realistic network jitter, where
-shorter queries can take *longer* to respond than longer ones.
-
-## Bonus
-
-- Would adding a debounce alone fix this, or does that just make the bug
-  rarer instead of impossible?
-- How would you solve this with an AbortController instead of a boolean
-  flag?
-- If you were using React Query / SWR, would this bug even be possible?
-  Why?
